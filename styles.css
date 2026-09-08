@@ -159,9 +159,37 @@ main{
 /* HOMEPAGE HERO */
 
 .hero{
+  position:relative;
+  overflow:hidden;
   padding:104px 0 80px;
   border-bottom:1px solid var(--line);
   background:linear-gradient(180deg,#151512 0%,var(--bg) 100%);
+}
+
+.hero::before{
+  content:"";
+  position:absolute;
+  top:0;
+  right:0;
+  width:48%;
+  height:100%;
+  background:
+    linear-gradient(
+      90deg,
+      var(--bg) 0%,
+      rgba(17,17,15,.86) 22%,
+      rgba(17,17,15,.45) 62%,
+      rgba(17,17,15,.22) 100%
+    ),
+    url("images/bhagavata-manuscript-home.jpg") center right / cover no-repeat;
+  opacity:.32;
+  filter:grayscale(35%) sepia(18%);
+  pointer-events:none;
+}
+
+.hero .container{
+  position:relative;
+  z-index:1;
 }
 
 .eyebrow{
