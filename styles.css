@@ -375,20 +375,9 @@ main{
   line-height:1.72;
 }
 
-.prose h2{
-  font:500 29px/1.25 var(--serif);
-  margin:56px 0 18px;
-  color:var(--text);
-}
-
-.prose h2:first-child{
-  margin-top:0;
-}
-
-.prose h3{
-  font:500 21px/1.35 var(--serif);
-  margin:36px 0 12px;
-  color:var(--text);
+.prose h2{font:400 36px/1.2 var(--serif);margin:56px 0 18px}
+.prose h2:first-child{margin-top:0}
+.prose h3{font:400 26px/1.3 var(--serif);margin:38px 0 12px}
 }
 
 .prose p{
