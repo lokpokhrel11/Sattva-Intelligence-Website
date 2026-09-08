@@ -181,7 +181,7 @@ main{
       rgba(17,17,15,.45) 62%,
       rgba(17,17,15,.22) 100%
     ),
-    url("images/bhagavata-manuscript-home.jpg") center right / cover no-repeat;
+    url("images/bhagavata-manuscript-home.png") center right / cover no-repeat;
   opacity:.32;
   filter:grayscale(35%) sepia(18%);
   pointer-events:none;
