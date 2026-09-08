@@ -831,4 +831,35 @@ tbody tr:hover td{
     transition:none!important;
   }
 
+}/* About page profile */
+
+.about-profile{
+  display:grid;
+  grid-template-columns:260px minmax(0, 1fr);
+  gap:56px;
+  align-items:start;
+  max-width:var(--max);
+  margin:0 auto;
+}
+
+.about-photo img{
+  display:block;
+  width:100%;
+  height:auto;
+  border:1px solid var(--line);
+}
+
+.about-profile .reading{
+  margin:0;
+}
+
+@media(max-width:760px){
+  .about-profile{
+    grid-template-columns:1fr;
+    gap:32px;
+  }
+
+  .about-photo{
+    max-width:260px;
+  }
 }
