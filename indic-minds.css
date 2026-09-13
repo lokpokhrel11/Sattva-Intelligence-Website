@@ -127,6 +127,14 @@
 .episode-index .subtitle {
   font-size: 15px;
 }
+.page-head-nyaya {
+  position: relative;
+  overflow: hidden;
+  min-height: 320px;
+  display: flex;
+  align-items: center;
+}
+
 .page-head-nyaya::before {
   content: "";
   position: absolute;
