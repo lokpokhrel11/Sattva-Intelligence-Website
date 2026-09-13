@@ -907,11 +907,11 @@ tbody tr:hover td{
 .page-head-suka .eyebrow {
   text-shadow: 0 2px 12px rgba(0,0,0,.6);
 }
-.method-manuscript {
+{
   margin: 36px 0 46px;
 }
 
-.method-manuscript img {
+ {
   display: block;
   width: 100%;
   height: auto;
@@ -920,7 +920,7 @@ tbody tr:hover td{
   object-position: left center;
 }
 
-.method-manuscript figcaption {
+ {
   margin-top: 9px;
   font-size: 0.8rem;
   line-height: 1.5;
