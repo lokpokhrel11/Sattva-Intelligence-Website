@@ -135,8 +135,8 @@
   align-items: center;
 }
 
-.image-credit-wrap {
-  padding-top: 12px;
+.page-head-nyaya + .section {
+  padding-top: 20px;
 }
 .page-head-nyaya::before {
   content: "";
