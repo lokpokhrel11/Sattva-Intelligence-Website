@@ -1,1 +1,322 @@
+/* ==========================================================
+   INDIC MINDS — PAGE-SPECIFIC STYLES
+   File: indic-minds.css
 
+   This stylesheet is loaded ONLY by indic-minds.html.
+   Your original styles.css remains unchanged.
+   ========================================================== */
+
+
+/* ---------- INTRODUCTION ---------- */
+
+.page-intro {
+  max-width: 820px;
+  margin-bottom: 64px;
+}
+
+
+/* Small label above title */
+
+.page-intro .section-label {
+  margin: 0 0 12px;
+  color: #c4a65a;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+
+/* Main Indic Minds title */
+
+.page-intro h1 {
+  max-width: 760px;
+  margin-top: 0;
+  margin-bottom: 28px;
+
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(3rem, 6vw, 5rem);
+  font-weight: 600;
+  line-height: 1.03;
+  letter-spacing: -0.035em;
+}
+
+
+/* Introductory paragraphs */
+
+.page-intro > p {
+  max-width: 760px;
+  margin-bottom: 20px;
+  font-size: 1.05rem;
+  line-height: 1.75;
+}
+
+
+/* First paragraph gets slightly more prominence */
+
+.page-intro > p:first-of-type {
+  font-size: 1.18rem;
+  line-height: 1.7;
+}
+
+
+/* ---------- SCOPE NOTE ---------- */
+
+.scope-note {
+  max-width: 760px;
+  margin: 36px 0;
+  padding: 24px 28px;
+
+  border-left: 3px solid #b99b4b;
+  background: rgba(255, 255, 255, 0.025);
+}
+
+.scope-note p {
+  margin-top: 0;
+  margin-bottom: 14px;
+  line-height: 1.7;
+}
+
+.scope-note p:last-child {
+  margin-bottom: 0;
+}
+
+
+/* ---------- EPISODE SECTION ---------- */
+
+.episode-index {
+  margin-top: 68px;
+}
+
+.episode-index h2 {
+  margin-top: 0;
+  margin-bottom: 24px;
+
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+
+/* ---------- TABLE CONTAINER ---------- */
+
+.episode-index .table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 8px;
+
+  background: rgba(255, 255, 255, 0.015);
+
+  -webkit-overflow-scrolling: touch;
+}
+
+
+/* ---------- EPISODE TABLE ---------- */
+
+.episode-index table {
+  width: 100%;
+  min-width: 900px;
+
+  border-collapse: collapse;
+  border-spacing: 0;
+
+  font-size: 0.94rem;
+  line-height: 1.5;
+}
+
+
+/* Header */
+
+.episode-index thead {
+  background: rgba(255, 255, 255, 0.035);
+}
+
+.episode-index th {
+  padding: 15px 18px;
+
+  border: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.13);
+
+  text-align: left;
+  vertical-align: bottom;
+
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+
+  opacity: 0.78;
+}
+
+
+/* Table cells */
+
+.episode-index td {
+  padding: 19px 18px;
+
+  border: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+
+  text-align: left;
+  vertical-align: top;
+}
+
+
+/* Remove line beneath final episode */
+
+.episode-index tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+
+/* Very subtle hover */
+
+.episode-index tbody tr {
+  transition: background-color 0.15s ease;
+}
+
+.episode-index tbody tr:hover {
+  background: rgba(255, 255, 255, 0.018);
+}
+
+
+/* Episode number */
+
+.episode-index td:first-child {
+  width: 72px;
+  opacity: 0.65;
+}
+
+
+/* Episode title */
+
+.episode-index td:nth-child(2) {
+  width: 52%;
+}
+
+
+/* Primary sources */
+
+.episode-index td:nth-child(3) {
+  width: 20%;
+  opacity: 0.78;
+}
+
+
+/* YouTube / status */
+
+.episode-index td:nth-child(4) {
+  width: 18%;
+}
+
+
+/* ---------- SECONDARY TITLE TEXT ---------- */
+
+.episode-index .subtitle {
+  display: block;
+  margin-top: 5px;
+
+  font-size: 0.87rem;
+  line-height: 1.45;
+
+  opacity: 0.66;
+}
+
+
+/* ---------- STATUS LABELS ---------- */
+
+.episode-index .status {
+  display: inline-block;
+
+  padding: 4px 9px;
+
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 999px;
+
+  font-size: 0.75rem;
+  line-height: 1.35;
+
+  white-space: nowrap;
+}
+
+
+/* Published episode */
+
+.episode-index .status.published {
+  color: #d1b866;
+  border-color: rgba(196, 166, 90, 0.55);
+}
+
+
+/* Planned episodes */
+
+.episode-index .status.planned {
+  opacity: 0.68;
+}
+
+
+/* ---------- MOBILE ---------- */
+
+@media (max-width: 760px) {
+
+  .page-intro {
+    margin-bottom: 48px;
+  }
+
+  .page-intro h1 {
+    font-size: 2.8rem;
+    line-height: 1.06;
+    margin-bottom: 24px;
+  }
+
+  .page-intro > p:first-of-type {
+    font-size: 1.08rem;
+  }
+
+  .page-intro > p {
+    font-size: 1rem;
+  }
+
+  .scope-note {
+    margin: 30px 0;
+    padding: 20px;
+  }
+
+  .episode-index {
+    margin-top: 52px;
+  }
+
+  .episode-index h2 {
+    font-size: 1.6rem;
+  }
+
+  .episode-index table {
+    min-width: 780px;
+  }
+
+  .episode-index th {
+    padding: 13px 15px;
+  }
+
+  .episode-index td {
+    padding: 17px 15px;
+  }
+}
+
+
+/* ---------- VERY SMALL SCREENS ---------- */
+
+@media (max-width: 480px) {
+
+  .page-intro h1 {
+    font-size: 2.35rem;
+  }
+
+  .scope-note {
+    padding: 18px;
+    border-left-width: 2px;
+  }
+}
