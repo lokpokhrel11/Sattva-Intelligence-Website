@@ -146,3 +146,10 @@
   position: relative;
   z-index: 1;
 }
+.image-credit {
+  max-width: 980px;
+  margin: 0 0 32px;
+  font-size: 0.82rem;
+  line-height: 1.55;
+  opacity: 0.58;
+}
