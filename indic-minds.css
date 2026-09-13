@@ -130,11 +130,14 @@
 .page-head-nyaya {
   position: relative;
   overflow: hidden;
-  min-height: 320px;
+  height: 280px;
   display: flex;
   align-items: center;
 }
 
+.image-credit-wrap {
+  padding-top: 12px;
+}
 .page-head-nyaya::before {
   content: "";
   position: absolute;
