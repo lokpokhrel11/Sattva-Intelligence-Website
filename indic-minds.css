@@ -137,13 +137,13 @@
   position: absolute;
   top: 0;
   right: 0;
-  width: 45%;
+  width: 58%;
   height: 100%;
   background:
-    linear-gradient(90deg, rgba(17,17,15,.96) 0%, rgba(17,17,15,.55) 40%, rgba(17,17,15,.1) 100%),
+    linear-gradient(90deg, rgba(17,17,15,.92) 0%, rgba(17,17,15,.35) 35%, rgba(17,17,15,0) 75%),
     url("images/images/nyaya-manuscript.png") center right / cover no-repeat;
-  opacity: .55;
-  filter: grayscale(15%) sepia(8%);
+  opacity: .95;
+  filter: none;
   pointer-events: none;
 }
 
