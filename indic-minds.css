@@ -1,65 +1,75 @@
 /* ==========================================================
-   INDIC MINDS — LIGHT PAGE-SPECIFIC ADJUSTMENTS ONLY
-   Keeps the page visually consistent with the main website.
+   INDIC MINDS — PAGE-SPECIFIC LAYOUT
+   Keeps this page aligned and visually consistent
+   with the rest of the Sattva Intelligence site.
    ========================================================== */
 
 
-/* Keep the intro aligned with the site's normal content width */
+/* ---------- MAIN PAGE WIDTH / CENTERING ---------- */
+
+.page-content {
+  width: min(1120px, calc(100% - 48px));
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 34px;
+  padding-bottom: 72px;
+}
+
+
+/* ---------- INTRO SECTION ---------- */
 
 .page-intro {
-  max-width: 900px;
-  margin-bottom: 42px;
+  max-width: 860px;
+  margin: 0;
 }
 
 
-/* Small section label above title */
+/* Small page label */
 
 .page-intro .section-label {
-  margin-bottom: 12px;
-  color: inherit;
-  opacity: 0.8;
-  font-size: 0.9rem;
-  font-weight: 500;
-  letter-spacing: 0.06em;
+  margin: 0 0 18px;
+  font-size: 0.95rem;
+  font-weight: 400;
+  letter-spacing: 0.03em;
   text-transform: none;
+  opacity: 0.78;
 }
 
 
-/* IMPORTANT:
-   Do NOT impose a huge custom title.
-   Let the main site stylesheet control typography.
-*/
+/* Main title */
 
 .page-intro h1 {
-  margin-top: 0;
-  margin-bottom: 24px;
+  margin: 0 0 34px;
+  font-size: 2.3rem;
+  line-height: 1.2;
+  font-weight: 600;
 }
 
 
-/* Normal paragraph spacing */
+/* Intro paragraphs */
 
 .page-intro > p {
-  max-width: 900px;
-  margin-bottom: 20px;
-  line-height: 1.7;
+  max-width: 860px;
+  margin: 0 0 24px;
+  font-size: 1rem;
+  line-height: 1.75;
 }
 
 
-/* Scope note: subtle, not a separate visual world */
+/* ---------- SCOPE NOTE ---------- */
 
 .scope-note {
-  max-width: 900px;
-  margin: 28px 0;
-  padding: 20px 22px;
+  max-width: 860px;
+  margin: 34px 0;
+  padding: 24px 28px;
 
-  border-left: 2px solid rgba(200, 170, 90, 0.65);
-  background: rgba(255, 255, 255, 0.018);
+  border-left: 2px solid rgba(190, 160, 80, 0.65);
+  background: rgba(255, 255, 255, 0.022);
 }
 
 .scope-note p {
-  margin-top: 0;
-  margin-bottom: 12px;
-  line-height: 1.65;
+  margin: 0 0 14px;
+  line-height: 1.7;
 }
 
 .scope-note p:last-child {
@@ -67,80 +77,72 @@
 }
 
 
-/* Episode section */
+/* ---------- EPISODE SECTION ---------- */
 
 .episode-index {
-  margin-top: 48px;
+  width: 100%;
+  margin-top: 58px;
 }
 
 .episode-index h2 {
-  margin-bottom: 20px;
+  margin: 0 0 24px;
+  font-size: 1.65rem;
+  line-height: 1.25;
 }
 
 
-/* Table wrapper */
+/* ---------- TABLE ---------- */
 
 .episode-index .table-wrapper {
   width: 100%;
   overflow-x: auto;
 }
 
-
-/* Keep table close to site's native table styling */
-
 .episode-index table {
   width: 100%;
+  min-width: 900px;
   border-collapse: collapse;
-  min-width: 820px;
 }
-
-
-/* Header cells */
 
 .episode-index th {
   padding: 14px 16px;
   text-align: left;
   vertical-align: bottom;
+  font-size: 0.78rem;
+  letter-spacing: 0.05em;
 }
-
-
-/* Body cells */
 
 .episode-index td {
-  padding: 16px;
+  padding: 17px 16px;
   vertical-align: top;
+  line-height: 1.55;
 }
 
 
-/* Episode number column */
+/* Column proportions */
 
-.episode-index td:first-child {
-  width: 70px;
+.episode-index td:first-child,
+.episode-index th:first-child {
+  width: 7%;
 }
 
-
-/* Main title column */
-
-.episode-index td:nth-child(2) {
-  width: 52%;
+.episode-index td:nth-child(2),
+.episode-index th:nth-child(2) {
+  width: 55%;
 }
 
-
-/* Sources column */
-
-.episode-index td:nth-child(3) {
+.episode-index td:nth-child(3),
+.episode-index th:nth-child(3) {
   width: 22%;
 }
 
-
-/* Status column */
-
-.episode-index td:nth-child(4) {
-  width: 18%;
+.episode-index td:nth-child(4),
+.episode-index th:nth-child(4) {
+  width: 16%;
 }
 
 
-/* Secondary subtitle text */
+/* Secondary text */
 
 .episode-index .subtitle {
   display: block;
@@ -150,8 +152,7 @@
 }
 
 
-/* Status labels:
-   intentionally understated */
+/* Status */
 
 .episode-index .status {
   display: inline-block;
@@ -167,25 +168,51 @@
 }
 
 
-/* Mobile */
+/* ---------- TABLE ROW SPACING ---------- */
+
+.episode-index tbody tr {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.episode-index tbody tr:last-child {
+  border-bottom: none;
+}
+
+
+/* ---------- MOBILE ---------- */
 
 @media (max-width: 760px) {
 
-  .page-intro {
-    margin-bottom: 34px;
+  .page-content {
+    width: min(100% - 32px, 1120px);
+    padding-top: 26px;
+    padding-bottom: 54px;
+  }
+
+  .page-intro h1 {
+    font-size: 2rem;
+    margin-bottom: 26px;
+  }
+
+  .page-intro > p {
+    font-size: 0.98rem;
   }
 
   .scope-note {
-    margin: 24px 0;
-    padding: 18px;
+    margin: 28px 0;
+    padding: 20px;
   }
 
   .episode-index {
-    margin-top: 40px;
+    margin-top: 46px;
+  }
+
+  .episode-index h2 {
+    font-size: 1.45rem;
   }
 
   .episode-index table {
-    min-width: 760px;
+    min-width: 780px;
   }
 
   .episode-index th,
