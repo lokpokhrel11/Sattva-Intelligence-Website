@@ -967,3 +967,19 @@ tbody tr:hover td{
   opacity: 0.62;
   margin: -8px 0 32px;
 }
+.method-intro-text {
+  max-width: 980px;
+  margin: 0 0 28px;
+  font-family: var(--serif);
+  font-size: 18px;
+  line-height: 1.72;
+  color: #d7d3ca;
+}
+
+.method-image-credit {
+  max-width: 980px;
+  margin: 0 0 48px;
+  font-size: 0.82rem;
+  line-height: 1.55;
+  opacity: 0.58;
+}
