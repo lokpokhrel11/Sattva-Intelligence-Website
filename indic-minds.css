@@ -146,10 +146,16 @@
   position: relative;
   z-index: 1;
 }
+.image-credit-wrap {
+  background: #11110f;
+  padding-top: 28px;
+}
+
 .image-credit {
   max-width: 980px;
   margin: 0 0 32px;
-  font-size: 0.82rem;
-  line-height: 1.55;
-  opacity: 0.58;
+  color: #aaa79d;
+  font-size: 0.85rem;
+  line-height: 1.6;
+  opacity: 0.75;
 }
