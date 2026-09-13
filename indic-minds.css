@@ -127,22 +127,17 @@
 .episode-index .subtitle {
   font-size: 15px;
 }
-.page-head-nyaya {
-  position: relative;
-  overflow: hidden;
-}
-
 .page-head-nyaya::before {
   content: "";
   position: absolute;
   top: 0;
   right: 0;
-  width: 58%;
+  width: 100%;
   height: 100%;
   background:
-    linear-gradient(90deg, rgba(17,17,15,.92) 0%, rgba(17,17,15,.35) 35%, rgba(17,17,15,0) 75%),
+    linear-gradient(90deg, rgba(17,17,15,.97) 0%, rgba(17,17,15,.85) 22%, rgba(17,17,15,.35) 48%, rgba(17,17,15,.1) 70%, rgba(17,17,15,0) 100%),
     url("images/images/nyaya-manuscript.png") center right / cover no-repeat;
-  opacity: .95;
+  opacity: 1;
   filter: none;
   pointer-events: none;
 }
