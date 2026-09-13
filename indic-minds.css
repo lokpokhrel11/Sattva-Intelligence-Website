@@ -1,80 +1,65 @@
 /* ==========================================================
-   INDIC MINDS — PAGE-SPECIFIC STYLES
-   File: indic-minds.css
-
-   This stylesheet is loaded ONLY by indic-minds.html.
-   Your original styles.css remains unchanged.
+   INDIC MINDS — LIGHT PAGE-SPECIFIC ADJUSTMENTS ONLY
+   Keeps the page visually consistent with the main website.
    ========================================================== */
 
 
-/* ---------- INTRODUCTION ---------- */
+/* Keep the intro aligned with the site's normal content width */
 
 .page-intro {
-  max-width: 820px;
-  margin-bottom: 64px;
+  max-width: 900px;
+  margin-bottom: 42px;
 }
 
 
-/* Small label above title */
+/* Small section label above title */
 
 .page-intro .section-label {
-  margin: 0 0 12px;
-  color: #c4a65a;
-  font-size: 0.78rem;
-  font-weight: 600;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
+  margin-bottom: 12px;
+  color: inherit;
+  opacity: 0.8;
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: none;
 }
 
 
-/* Main Indic Minds title */
+/* IMPORTANT:
+   Do NOT impose a huge custom title.
+   Let the main site stylesheet control typography.
+*/
 
 .page-intro h1 {
-  max-width: 760px;
   margin-top: 0;
-  margin-bottom: 28px;
-
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(3rem, 6vw, 5rem);
-  font-weight: 600;
-  line-height: 1.03;
-  letter-spacing: -0.035em;
+  margin-bottom: 24px;
 }
 
 
-/* Introductory paragraphs */
+/* Normal paragraph spacing */
 
 .page-intro > p {
-  max-width: 760px;
+  max-width: 900px;
   margin-bottom: 20px;
-  font-size: 1.05rem;
-  line-height: 1.75;
-}
-
-
-/* First paragraph gets slightly more prominence */
-
-.page-intro > p:first-of-type {
-  font-size: 1.18rem;
   line-height: 1.7;
 }
 
 
-/* ---------- SCOPE NOTE ---------- */
+/* Scope note: subtle, not a separate visual world */
 
 .scope-note {
-  max-width: 760px;
-  margin: 36px 0;
-  padding: 24px 28px;
+  max-width: 900px;
+  margin: 28px 0;
+  padding: 20px 22px;
 
-  border-left: 3px solid #b99b4b;
-  background: rgba(255, 255, 255, 0.025);
+  border-left: 2px solid rgba(200, 170, 90, 0.65);
+  background: rgba(255, 255, 255, 0.018);
 }
 
 .scope-note p {
   margin-top: 0;
-  margin-bottom: 14px;
-  line-height: 1.7;
+  margin-bottom: 12px;
+  line-height: 1.65;
 }
 
 .scope-note p:last-child {
@@ -82,241 +67,129 @@
 }
 
 
-/* ---------- EPISODE SECTION ---------- */
+/* Episode section */
 
 .episode-index {
-  margin-top: 68px;
+  margin-top: 48px;
 }
 
 .episode-index h2 {
-  margin-top: 0;
-  margin-bottom: 24px;
-
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 1.8rem;
-  font-weight: 600;
-  line-height: 1.2;
+  margin-bottom: 20px;
 }
 
 
-/* ---------- TABLE CONTAINER ---------- */
+/* Table wrapper */
 
 .episode-index .table-wrapper {
   width: 100%;
   overflow-x: auto;
-
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  border-radius: 8px;
-
-  background: rgba(255, 255, 255, 0.015);
-
-  -webkit-overflow-scrolling: touch;
 }
 
 
-/* ---------- EPISODE TABLE ---------- */
+/* Keep table close to site's native table styling */
 
 .episode-index table {
   width: 100%;
-  min-width: 900px;
-
   border-collapse: collapse;
-  border-spacing: 0;
-
-  font-size: 0.94rem;
-  line-height: 1.5;
+  min-width: 820px;
 }
 
 
-/* Header */
-
-.episode-index thead {
-  background: rgba(255, 255, 255, 0.035);
-}
+/* Header cells */
 
 .episode-index th {
-  padding: 15px 18px;
-
-  border: 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.13);
-
+  padding: 14px 16px;
   text-align: left;
   vertical-align: bottom;
-
-  font-size: 0.72rem;
-  font-weight: 600;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-
-  opacity: 0.78;
 }
 
 
-/* Table cells */
+/* Body cells */
 
 .episode-index td {
-  padding: 19px 18px;
-
-  border: 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-
-  text-align: left;
+  padding: 16px;
   vertical-align: top;
 }
 
 
-/* Remove line beneath final episode */
-
-.episode-index tbody tr:last-child td {
-  border-bottom: 0;
-}
-
-
-/* Very subtle hover */
-
-.episode-index tbody tr {
-  transition: background-color 0.15s ease;
-}
-
-.episode-index tbody tr:hover {
-  background: rgba(255, 255, 255, 0.018);
-}
-
-
-/* Episode number */
+/* Episode number column */
 
 .episode-index td:first-child {
-  width: 72px;
-  opacity: 0.65;
+  width: 70px;
 }
 
 
-/* Episode title */
+/* Main title column */
 
 .episode-index td:nth-child(2) {
   width: 52%;
 }
 
 
-/* Primary sources */
+/* Sources column */
 
 .episode-index td:nth-child(3) {
-  width: 20%;
-  opacity: 0.78;
+  width: 22%;
 }
 
 
-/* YouTube / status */
+/* Status column */
 
 .episode-index td:nth-child(4) {
   width: 18%;
 }
 
 
-/* ---------- SECONDARY TITLE TEXT ---------- */
+/* Secondary subtitle text */
 
 .episode-index .subtitle {
   display: block;
-  margin-top: 5px;
-
-  font-size: 0.87rem;
-  line-height: 1.45;
-
-  opacity: 0.66;
+  margin-top: 4px;
+  font-size: 0.9em;
+  opacity: 0.72;
 }
 
 
-/* ---------- STATUS LABELS ---------- */
+/* Status labels:
+   intentionally understated */
 
 .episode-index .status {
   display: inline-block;
-
-  padding: 4px 9px;
-
-  border: 1px solid rgba(255, 255, 255, 0.16);
-  border-radius: 999px;
-
-  font-size: 0.75rem;
-  line-height: 1.35;
-
-  white-space: nowrap;
+  font-size: 0.9em;
 }
-
-
-/* Published episode */
 
 .episode-index .status.published {
-  color: #d1b866;
-  border-color: rgba(196, 166, 90, 0.55);
+  font-weight: 600;
 }
-
-
-/* Planned episodes */
 
 .episode-index .status.planned {
-  opacity: 0.68;
+  opacity: 0.72;
 }
 
 
-/* ---------- MOBILE ---------- */
+/* Mobile */
 
 @media (max-width: 760px) {
 
   .page-intro {
-    margin-bottom: 48px;
-  }
-
-  .page-intro h1 {
-    font-size: 2.8rem;
-    line-height: 1.06;
-    margin-bottom: 24px;
-  }
-
-  .page-intro > p:first-of-type {
-    font-size: 1.08rem;
-  }
-
-  .page-intro > p {
-    font-size: 1rem;
+    margin-bottom: 34px;
   }
 
   .scope-note {
-    margin: 30px 0;
-    padding: 20px;
+    margin: 24px 0;
+    padding: 18px;
   }
 
   .episode-index {
-    margin-top: 52px;
-  }
-
-  .episode-index h2 {
-    font-size: 1.6rem;
+    margin-top: 40px;
   }
 
   .episode-index table {
-    min-width: 780px;
+    min-width: 760px;
   }
 
-  .episode-index th {
-    padding: 13px 15px;
-  }
-
+  .episode-index th,
   .episode-index td {
-    padding: 17px 15px;
-  }
-}
-
-
-/* ---------- VERY SMALL SCREENS ---------- */
-
-@media (max-width: 480px) {
-
-  .page-intro h1 {
-    font-size: 2.35rem;
-  }
-
-  .scope-note {
-    padding: 18px;
-    border-left-width: 2px;
+    padding: 13px 14px;
   }
 }
