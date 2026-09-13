@@ -1,64 +1,25 @@
 /* ==========================================================
-   INDIC MINDS — PAGE-SPECIFIC STYLES
-   Typography inherits from the main styles.css so this page
-   matches the rest of the Sattva Intelligence website.
+   INDIC MINDS — MINIMAL PAGE-SPECIFIC CSS
+   Keeps the page consistent with the rest of the website.
+   Main typography and layout come from styles.css.
    ========================================================== */
 
 
-/* ---------- PAGE CONTAINER ---------- */
-
-.page-content {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding-left: 24px;
-  padding-right: 24px;
-}
-
-
-/* ---------- INTRO SECTION ---------- */
+/* Do not override the site's main page width or typography */
 
 .page-intro {
-  max-width: 850px;
-  margin: 0;
+  margin-bottom: 36px;
 }
 
 
-/* Small label above the main title.
-   This should correspond visually to labels such as
-   "Research practice" on the Method page. */
-
-.page-intro .section-label {
-  margin: 0 0 10px;
-}
-
-
-/* Main page title.
-   Font, size, weight, and family are inherited from styles.css. */
-
-.page-intro h1 {
-  margin-top: 0;
-  margin-bottom: 22px;
-}
-
-
-/* Intro paragraphs.
-   Typography is inherited from the main site. */
-
-.page-intro > p {
-  max-width: 850px;
-  margin-bottom: 20px;
-}
-
-
-/* ---------- SCOPE NOTE ---------- */
+/* Keep scope note subtle */
 
 .scope-note {
-  max-width: 850px;
   margin: 28px 0;
-  padding: 20px 24px;
+  padding: 18px 22px;
 
   border-left: 2px solid rgba(190, 160, 80, 0.5);
-  background: rgba(255, 255, 255, 0.018);
+  background: rgba(255, 255, 255, 0.015);
 }
 
 .scope-note p {
@@ -71,25 +32,14 @@
 }
 
 
-/* ---------- EPISODE SECTION ---------- */
+/* Episode section */
 
 .episode-index {
-  width: 100%;
-  margin-top: 52px;
+  margin-top: 44px;
 }
 
 
-/* Section heading.
-   Typography inherits from styles.css so it matches headings such as
-   "1. Textual Method and Sources". */
-
-.episode-index h2 {
-  margin-top: 0;
-  margin-bottom: 22px;
-}
-
-
-/* ---------- TABLE WRAPPER ---------- */
+/* Table wrapper */
 
 .episode-index .table-wrapper {
   width: 100%;
@@ -97,39 +47,25 @@
 }
 
 
-/* ---------- TABLE ---------- */
+/* Episode table */
 
 .episode-index table {
   width: 100%;
-  min-width: 880px;
   border-collapse: collapse;
 }
 
-
-/* Header row */
-
-.episode-index thead {
-  background: rgba(255, 255, 255, 0.025);
+.episode-index th,
+.episode-index td {
+  padding: 14px 16px;
+  text-align: left;
+  vertical-align: top;
 }
 
 .episode-index th {
-  padding: 14px 16px;
-
-  text-align: left;
-  vertical-align: bottom;
-
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.10);
 }
 
-
-/* Body rows */
-
 .episode-index td {
-  padding: 16px;
-
-  text-align: left;
-  vertical-align: top;
-
   border-bottom: 1px solid rgba(255, 255, 255, 0.07);
 }
 
@@ -138,30 +74,7 @@
 }
 
 
-/* ---------- COLUMN WIDTHS ---------- */
-
-.episode-index th:first-child,
-.episode-index td:first-child {
-  width: 7%;
-}
-
-.episode-index th:nth-child(2),
-.episode-index td:nth-child(2) {
-  width: 55%;
-}
-
-.episode-index th:nth-child(3),
-.episode-index td:nth-child(3) {
-  width: 22%;
-}
-
-.episode-index th:nth-child(4),
-.episode-index td:nth-child(4) {
-  width: 16%;
-}
-
-
-/* ---------- EPISODE SUBTITLE ---------- */
+/* Episode subtitle */
 
 .episode-index .subtitle {
   display: block;
@@ -170,11 +83,7 @@
 }
 
 
-/* ---------- STATUS TEXT ---------- */
-
-.episode-index .status {
-  display: inline-block;
-}
+/* Status */
 
 .episode-index .status.published {
   font-weight: 600;
@@ -185,53 +94,16 @@
 }
 
 
-/* ---------- SUBTLE ROW HOVER ---------- */
-
-.episode-index tbody tr {
-  transition: background-color 0.15s ease;
-}
-
-.episode-index tbody tr:hover {
-  background: rgba(255, 255, 255, 0.015);
-}
-
-
-/* ---------- TABLET ---------- */
-
-@media (max-width: 900px) {
-
-  .page-content {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-
-  .page-intro {
-    max-width: 780px;
-  }
-
-  .page-intro > p,
-  .scope-note {
-    max-width: 780px;
-  }
-}
-
-
-/* ---------- MOBILE ---------- */
+/* Mobile */
 
 @media (max-width: 760px) {
 
-  .page-content {
-    padding-left: 18px;
-    padding-right: 18px;
-  }
-
   .scope-note {
-    margin: 24px 0;
-    padding: 18px;
+    padding: 16px 18px;
   }
 
-  .episode-index {
-    margin-top: 42px;
+  .episode-index .table-wrapper {
+    overflow-x: auto;
   }
 
   .episode-index table {
@@ -240,6 +112,6 @@
 
   .episode-index th,
   .episode-index td {
-    padding: 13px;
+    padding: 12px 13px;
   }
 }
